@@ -37,6 +37,23 @@ A modern and responsive **portfolio website** built using **HTML**, **CSS**, and
 
 ---
 
+## 🛠️ Tech Stack
+
+- **HTML5**
+- **CSS3** (Media queries, animations, hover effects)
+- **JavaScript** (DOM interaction, dark mode toggle, scroll features)
+- **Font Awesome** / **Google Fonts**
+
+---
+
+## 💡 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aryangiri/portfolio.git
+
+---
+
 ## 📁 Folder Structure
 
 ```plaintext
@@ -54,17 +71,3 @@ portfolio/
 
 ---
 
-## 🛠️ Tech Stack
-
-- **HTML5**
-- **CSS3** (Media queries, animations, hover effects)
-- **JavaScript** (DOM interaction, dark mode toggle, scroll features)
-- **Font Awesome** / **Google Fonts**
-
----
-
-## 💡 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/aryangiri/portfolio.git
