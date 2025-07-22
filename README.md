@@ -44,6 +44,10 @@ Here are some of the projects you’ll find in this repo:
 
 ---
 
+## 📁 Folder Structure
+
+```plaintext
+
 web-dev/
 ├── netflix-clone/
 │   ├── index.html
