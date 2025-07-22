@@ -51,6 +51,9 @@ portfolio/
 ├── assets/
 │   └── Aryan_Giri_Resume.pdf
 └── README.md
+
+---
+
 ## 🛠️ Tech Stack
 
 - **HTML5**
