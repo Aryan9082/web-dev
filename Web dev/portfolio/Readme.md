@@ -69,5 +69,4 @@ portfolio/
 │   └── Aryan_Giri_Resume.pdf
 └── README.md
 
----
 
