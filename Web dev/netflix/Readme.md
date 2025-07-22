@@ -16,6 +16,19 @@ A responsive and visually appealing **Netflix Clone** built using **HTML, CSS, a
 - 🌐 Dummy data or TMDB API ready structure
 
 
+## 📁 Folder Structure
+
+```plaintext
+
+netflix-clone/
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│ └── (all images and logos)
+├── trailers/
+│ └── (optional trailer previews or thumbnails)
+└── README.md
 
 
 ## 🛠️ Tech Stack
