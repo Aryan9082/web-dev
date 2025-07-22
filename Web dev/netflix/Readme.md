@@ -15,21 +15,7 @@ A responsive and visually appealing **Netflix Clone** built using **HTML, CSS, a
 - 🧠 Easy-to-modify structure for developers
 - 🌐 Dummy data or TMDB API ready structure
 
-
-## 📁 Folder Structure
-
-```plaintext
-
-netflix-clone/
-├── index.html
-├── style.css
-├── script.js
-├── images/
-│ └── (all images and logos)
-├── trailers/
-│ └── (optional trailer previews or thumbnails)
-└── README.md
-
+---
 
 ## 🛠️ Tech Stack
 
@@ -50,3 +36,23 @@ netflix-clone/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/netflix-clone.git
+
+
+---
+
+
+## 📁 Folder Structure
+
+```plaintext
+
+netflix-clone/
+├── index.html
+├── style.css
+├── script.js
+├── images/
+│ └── (all images and logos)
+├── trailers/
+│ └── (optional trailer previews or thumbnails)
+└── README.md
+
+
