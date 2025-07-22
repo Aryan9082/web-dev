@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan Giri - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">Aryan Giri</h1>
+    <p class="subtitle">Python | Data Science | Machine Learning | Data Analytics | HTML/CSS</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="toggleDark" class="dark-toggle" onclick="toggleDarkMode()">☀️</button>
+
+
+  </header>
+
+  <section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Hello! I’m <strong>Aryan Giri</strong>, a final-year B.Tech Electronics & Communication Engineering student with a strong passion for technology, data-driven solutions, and innovation. My interest lies at the intersection of programming and problem-solving — where I use tools like <strong>Python, Machine Learning, and Data Analytics</strong> to extract insights and build impactful projects.
+    </p>
+    <p>
+      Over the past few years, I’ve explored areas including <strong>Natural Language Processing, predictive modeling, data visualization</strong>, and frontend development with <strong>HTML/CSS</strong>. Whether it’s building a fake news detection model or designing a responsive portfolio website like this one, I thrive on turning ideas into practical solutions.
+    </p>
+    <p>
+      I’m currently seeking opportunities where I can contribute to meaningful tech projects, collaborate with creative minds, and grow as a developer. This portfolio reflects my learning journey and showcases some of the work I’m most proud of.
+    </p>
+    <a href="Resume.pdf" download class="btn">📄 Download Resume</a>
+  </div>
+</section>
+
+
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-box">
+        <span>Python</span>
+        <div class="progress"><div class="bar" style="width: 90%"></div></div>
+        <span>HTML/CSS</span>
+        <div class="progress"><div class="bar" style="width: 85%"></div></div>
+        <span>Machine Learning</span>
+        <div class="progress"><div class="bar" style="width: 80%"></div></div>
+        <span>Data Analytics</span>
+        <div class="progress"><div class="bar" style="width: 85%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Fake News Detection</h3>
+          <p>A Python project using NLP and Machine Learning to detect real and fake news.</p>
+          <a href="https://github.com/Aryan9082/fake-news-detection" class="btn" target="_blank">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Data Analysis Dashboard</h3>
+          <p>Used Python (Pandas, Seaborn & Matplotlib) to visualize large datasets and generate reports.</p>
+          <a href="https://github.com/Aryan9082/data_analysis" class="btn" target="_blank">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>This very site was built using HTML/CSS and JavaScript, showcasing my portfolio.</p>
+          <a href="https://github.com/Aryan9082/portfolio" class="btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section reveal">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Data Science Certification</h3>
+          <p>Certified by CETPA Infotech in Data Science and Machine Learning.</p>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Certified Web Development course from XYZ Institution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="contact" class="section reveal">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- 👇 Add this wrapper with margin-top to lower it -->
+    <div class="contact-info">
+      <p>✉ Email: <a href="mailto:aryangiri3000@gmail.com">aryangiri3000@gmail.com</a></p>
+      <p>🔗 GitHub: <a href="https://github.com/Aryan9082" target="_blank">github.com/Aryan9082</a></p>
+      <p>🔗 LinkedIn: <a href="https://linkedin.com/in/aryan-giri-a42483202" target="_blank">linkedin.com/in/aryan-giri-a42483202</a></p>
+      <a href="https://wa.me/7048948701" class="whatsapp-button" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Icon" />
+      </a>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Aryan Giri | Portfolio</p>
+  </footer>
+
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">⬆</button>
+  <script src="script.js"></script>
+</body>
+</html>

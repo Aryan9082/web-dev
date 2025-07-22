@@ -1,0 +1,346 @@
+:root {
+  --main: #3b3c98;
+  --accent: #a18cd1;
+  --bg: #f4f6fa;
+  --text: #1e1e2f;
+  --card-bg: #ffffff;
+  --link: #1a0dab;
+  --glass: rgba(255, 255, 255, 0.8);
+  --shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+  --gradient: linear-gradient(135deg, var(--main), var(--accent));
+  --toggle-light: #ffffff;
+  --toggle-dark: #3b3c98;
+}
+
+.dark-mode {
+  --bg: #12121a;
+  --text: #eeeeee;
+  --card-bg: #2a2a40;
+  --link: #b0c4ff;
+  --glass: rgba(40, 40, 60, 0.85);
+  --main: #a18cd1;
+  --accent: #3b3c98;
+}
+
+.light-mode {
+  --bg: #f4f6fa;
+  --text: #1e1e2f;
+  --card-bg: #ffffff;
+  --link: #1a0dab;
+  --glass: rgba(255, 255, 255, 0.8);
+  --main: #3b3c98;
+  --accent: #a18cd1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  padding-top: 140px;
+}
+
+a {
+  color: var(--link);
+  transition: color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* === Header / Navbar === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--gradient);
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+  border-bottom: 4px solid var(--accent);
+  animation: slideInDown 0.8s ease forwards;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 8px 0 18px;
+  opacity: 0.95;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #ffe;
+}
+
+#toggleDark {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 8px 14px;
+  background: var(--card-bg);
+  color: var(--text);
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+#toggleDark:hover {
+  transform: scale(1.1);
+  background: var(--accent);
+  color: white;
+}
+
+/* === Sections === */
+.section {
+  padding: 90px 0 80px;
+  background: var(--bg);
+  animation: fadeIn 0.9s ease-in;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: var(--main);
+  font-weight: 600;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--accent);
+  margin: 12px auto 0;
+  border-radius: 4px;
+}
+
+/* === Skill Bars === */
+.skill-box span {
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  margin-top: 20px;
+}
+
+.progress {
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.bar {
+  height: 100%;
+  background: var(--gradient);
+  border-radius: 12px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* === Project & Certification Cards === */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--main);
+  font-size: 1.4rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* === Form === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+form input,
+form textarea {
+  padding: 14px;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form button {
+  padding: 14px;
+  background: var(--gradient);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s ease;
+}
+
+form button:hover {
+  background: linear-gradient(to right, #4f52d0, #b4aef8);
+  transform: scale(1.03);
+}
+
+/* === Footer === */
+footer {
+  background: var(--main);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 80px;
+  font-size: 0.95rem;
+}
+
+/* === Scroll to Top Button === */
+#topBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 12px 15px;
+  font-size: 20px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease;
+}
+
+#topBtn:hover {
+  background: #7a7edb;
+}
+
+.whatsapp-button {
+  display: block;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.whatsapp-button img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+
+
+/* === Reusable Button Class === */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--gradient);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* === Reveal Animation === */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact-info {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--accent);
+}

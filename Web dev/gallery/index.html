@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Footballer Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Football Legends</h1>
+
+<div class="gallery" id="gallery">
+  <!-- Cards will be inserted here -->
+</div>
+
+<!-- Modal -->
+<div class="modal" id="playerModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalName"></h2>
+    <p><strong>Position:</strong> <span id="modalPosition"></span></p>
+    <p><strong>Club:</strong> <span id="modalClub"></span></p>
+    <p><strong>Nation:</strong> <span id="modalNation"></span></p>
+    <p><strong>Goals:</strong> <span id="modalGoals"></span></p>
+    <p><strong>Assists:</strong> <span id="modalAssists"></span></p>
+    <p><strong>Trophies:</strong> <span id="modalTrophies"></span></p>
+    <p><strong>Rating:</strong> <span id="modalRating" class="stars"></span></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

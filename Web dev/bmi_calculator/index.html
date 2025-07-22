@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMI Calculator - Circular Gauge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<div class="container">
+  <h2>BMI Calculator</h2>
+
+  <div class="unit-toggle">
+    <label><input type="radio" name="unit" value="metric" checked onchange="updateUnits()"> Metric (kg/cm)</label>
+    &nbsp;&nbsp;
+    <label><input type="radio" name="unit" value="imperial" onchange="updateUnits()"> Imperial (lbs/in)</label>
+  </div>
+
+  <input type="text" id="name" placeholder="Enter your name">
+  <input type="number" id="age" placeholder="Enter your age">
+  <select id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  <input type="number" id="height" placeholder="Height in cm">
+  <input type="number" id="weight" placeholder="Weight in kg">
+  <button onclick="calculateBMI()">Calculate BMI</button>
+
+  <div class="result" id="bmiResult"></div>
+  <div class="tips" id="bmiTips"></div>
+
+  <!-- Circular Gauge -->
+  <div class="gauge-wrapper">
+    <div class="gauge-needle" id="gaugeNeedle"></div>
+    <div class="gauge-center"></div>
+  </div>
+  <div class="gauge-labels">Underweight &nbsp; Normal &nbsp; Overweight &nbsp; Obese</div>
+
+  <!-- Horizontal Scale -->
+  <div class="bmi-scale" style="position: relative;">
+    <div class="needle" id="needle"></div>
+
+    <!-- Fixed Marker Labels -->
+    <div class="scale-marker" style="left: 0%;">0</div>
+    <div class="scale-marker" style="left: 46.25%;">18.5</div>
+    <div class="scale-marker" style="left: 62.5%;">25</div>
+    <div class="scale-marker" style="left: 75%;">30</div>
+    <div class="scale-marker" style="left: 100%;">40+</div>
+  </div>
+
+  <div class="note">
+    BMI Categories: Underweight | Normal | Overweight | Obese
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
